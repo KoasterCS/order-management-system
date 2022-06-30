@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: order-management-system
+  task:
+    scheduling:
+      pool:
+        size: 5
+    
+azure:
+  cosmos:
+    uri: uri here
+    key: key here
+    database: database name
+    populateQueryMetrics: false
+
+logging:
+  level:
+    com.azure.cosmos.implementation.SqlQuerySpecLogger: TRACE
+    
+
+ 
+
